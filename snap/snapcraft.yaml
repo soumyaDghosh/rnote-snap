@@ -43,6 +43,7 @@ parts:
       - CARGO_BUILD_JOBS: $CRAFT_PARALLEL_BUILD_COUNT
     build-packages:
       - cmake
+      - libasound2-dev
     meson-parameters:
       - --prefix=/snap/rnote/current/usr
     override-pull: |
