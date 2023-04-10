@@ -69,11 +69,14 @@ parts:
       cd "/snap/$snap/current" && find . -type f,l -exec rm -f "$SNAPCRAFT_PRIME/{}" \;
       done
 
+plugs:
+  curtail:
+    interface: dbus
+    bus: session
+    name: com.github.flxzt.rnote
 apps:
   rnote:
     command: usr/bin/rnote
     extensions: [gnome]
     common-id: com.github.flxzt.rnote
     desktop: usr/share/applications/com.github.flxzt.rnote.desktop
-    plugs:
-      - home
