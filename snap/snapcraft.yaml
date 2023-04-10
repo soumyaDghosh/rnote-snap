@@ -80,3 +80,6 @@ apps:
     extensions: [gnome]
     common-id: com.github.flxzt.rnote
     desktop: usr/share/applications/com.github.flxzt.rnote.desktop
+    plugs:
+      - home
+      - removable-media
