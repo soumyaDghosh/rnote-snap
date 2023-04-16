@@ -69,8 +69,8 @@ parts:
       cd "/snap/$snap/current" && find . -type f,l -exec rm -f "$SNAPCRAFT_PRIME/{}" \;
       done
 
-plugs:
-  curtail:
+slots:
+  rnote:
     interface: dbus
     bus: session
     name: com.github.flxzt.rnote
