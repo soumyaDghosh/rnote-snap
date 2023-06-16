@@ -1,6 +1,6 @@
 name: rnote # you probably want to 'snapcraft register <name>'
 base: core22 # the base snap is the execution environment for this snap
-version: git
+#version: git
 adopt-info: rnote
 license: GPL-3.0+
 issues: https://github.com/soumyaDghosh/rnote-snap/issues
