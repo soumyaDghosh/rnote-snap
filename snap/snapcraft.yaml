@@ -1,6 +1,5 @@
 name: rnote # you probably want to 'snapcraft register <name>'
 base: core22 # the base snap is the execution environment for this snap
-#version: git
 adopt-info: rnote
 license: GPL-3.0+
 issues: https://github.com/soumyaDghosh/rnote-snap/issues
@@ -9,9 +8,11 @@ website: https://github.com/soumyaDghosh/rnote-snap
 architectures:
   - build-on: amd64
   - build-on: arm64
+
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
 compression: lzo
+
 parts:
   rustup:
     plugin: nil
@@ -37,6 +38,7 @@ parts:
     plugin: meson
     source: https://github.com/flxzt/rnote.git
     source-tag: v0.7.1
+    source-depth: 1
     build-environment:
       - RUSTUP_HOME: $CRAFT_STAGE/usr/share/rust
       - CARGO_HOME: $CRAFT_STAGE/usr/share/rust
