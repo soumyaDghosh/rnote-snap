@@ -37,7 +37,7 @@ parts:
     # See 'snapcraft plugins'
     plugin: meson
     source: https://github.com/flxzt/rnote.git
-    source-tag: 'v0.8.1'
+    source-tag: 'v0.8.2'
     source-depth: 1
     build-environment:
       - RUSTUP_HOME: $CRAFT_STAGE/usr/share/rust
