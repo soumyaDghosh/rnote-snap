@@ -25,7 +25,7 @@ parts:
     after: [rustup]
     plugin: meson
     source: https://github.com/flxzt/rnote.git
-    source-tag: 'v0.10.0'
+    source-tag: 'v0.10.1'
     source-depth: 1
     build-environment:
       - PATH: ${HOME}/.cargo/bin:${PATH}
